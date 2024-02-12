@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Event Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>School Event Manager</h1>
+    <div id="add-event">
+      <select id="subject-select">
+        <option value="Filosofia">Filosofia</option>
+        <option value="Storia">Storia</option>
+        <option value="Fisica">Fisica</option>
+        <option value="Matematica">Matematica</option>
+        <option value="Informatica">Informatica</option>
+        <option value="Scienze">Scienze</option>
+        <option value="Italiano">Italiano</option>
+        <option value="Motorie">Motorie</option>
+        <option value="Inglese">Inglese</option>
+        <option value="Disegno">Disegno</option>
+        <option value="Storia dell'arte">Storia dell'arte</option>
+      </select>
+      <select id="type-select">
+        <option value="Verifica">Verifica</option>
+        <option value="Interrogazione">Interrogazione</option>
+        <option value="Pratico">Pratico</option>
+        <option value="Recupero">Recupero</option>
+      </select>
+      <select id="priority-select">
+        <option value="Alta">Alta priorità</option>
+        <option value="Media">Media priorità</option>
+        <option value="Bassa">Bassa priorità</option>
+      </select>
+      <input type="date" id="event-date">
+      <button onclick="addEvent()">Aggiungi Evento</button>
+    </div>
+    <div id="events-container">
+      <!-- Lista degli eventi -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

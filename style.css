@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#add-event {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#add-event select,
+#add-event input[type="text"],
+#add-event input[type="date"],
+#add-event button {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#add-event button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#add-event button:hover {
+  background-color: #0056b3;
+}
+
+.event {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.event span {
+  margin-right: 1em;
+}
+
+.event button {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.event button:hover {
+  background-color: #e74c3c;
+}
+
+.event span.date {
+  display: block;
+  text-align: left;
+}
+
+.event .event-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.event .event-details span {
+  margin-bottom: 5px;
+}
